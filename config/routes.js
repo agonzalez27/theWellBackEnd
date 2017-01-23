@@ -1,10 +1,10 @@
 var express = require('express');
 var router = express.Router();
-var funeralHomesCtrl = require('../controllers/prayerRequests')
+var prayerRequestCtrl = require('../controllers/prayerRequest')
 
 
 
 router.route('/api/prayerRequest')
-  .post(prayerRequests.sendEmail);
+  .post(prayerRequestCtrl.sendEmail);
 
 module.exports = router;
